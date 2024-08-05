@@ -8,8 +8,8 @@
     {{ if not .Params.private }}
         <div class="post">
             <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                <div  style="font-size-adjust: 0.5;" class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
+                <h1 style="font-size-adjust: 0.5;"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
                 {{ .Summary }}
             </p>
         </div>

@@ -7,8 +7,8 @@ languageCode = "en-us"
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   google_maps_api_key = "AIzaSyBPifOhPhwVt-gU8DfPxq_2vcLZlBLW70I"
   google_maps_map_id = "1c4b9624c077131"
-  font = "https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
-  font_name = "DM Mono"
+  font = "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+  font_name = "EB Garamond"
   markerBorder = "#FAFAFA" 
   markerBackground = "#FAFAFA"
   markerColor = "#00000"
@@ -17,9 +17,9 @@ languageCode = "en-us"
   animateStyle = "animated zoomIn fast" 
 
   [[params.navlinks]]
-  name = "about/"
+  name = "About"
   url = "about/"
 
   [[params.navlinks]]
-  name = "posts/"
+  name = "Posts"
   url = "posts/"

@@ -34,46 +34,46 @@ All of a sudden I found myself without a plan, but with an agreement to stay at 
 </head><style>
 
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 
 @font-face {
-    font-family: 'DM Mono';
-    font-style: normal;
-    src: url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'DM Mono';
-    font-style: normal;
-    src: url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'DM Mono';
-    src: url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+    font-family: 'EB Garamond';
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'DM Mono';
-    src: url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-    font-style: normal;
+    font-family: 'EB Garamond';
+    font-style: italic;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
     font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    font-style: italic;
+    font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
 :root {
     --global-font-size: 16px;
     --global-font-color: #444;
-    --mono-font-stack: 'DM Mono', Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: 'DM Mono', Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --mono-font-stack: 'EB Garamond', Garamond, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --font-stack: 'EB Garamond', Garamond, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
@@ -82,7 +82,7 @@ All of a sudden I found myself without a plan, but with an agreement to stay at 
 
 @media only screen and (max-width: 850px) {
     :root {
-        --global-font-size: 14px;
+        --global-font-size: 16px;
         --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
@@ -130,10 +130,12 @@ h6,
 .h6 {
     font-family: var(--font-stack);
     clear: both;
+    margin-bottom: 5px;
 }
 
 h1 {
-    margin-bottom: 150px;
+    margin-bottom: 25px;
+    font-size-adjust: 0.6;
 }
 
 .content-column-content p,
@@ -201,7 +203,7 @@ figure {
 
 .footer {
     clear: both;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 10px;;
     border-top: 1px solid var(--secondary-color);
     color: var(--global-font-color);
@@ -320,19 +322,19 @@ figure {
 
 </style><body class="terminal">
     <div class="container">
-        <div class="terminal-nav">
-          <header class="terminal-logo">
-            <div class="logo terminal-prompt">
+        <div class="terminal-nav" >
+          <header class="terminal-logo" style="width:100%">
+            <div style="display:flex;align-items: left;padding-top:15px;">
               
               
-              <a href="http://localhost:1313/" class="no-style ">Sebastian Nicolajsen</a>:~# 
-              <a href='http://localhost:1313/posts'>posts</a>/<a href='http://localhost:1313/posts/going-abroad'>going-abroad</a>/</div></header>
+              <a href="http://localhost:1313/"  class="no-style ">Sebastian Nicolajsen</a> 
+              &nbsp; ・ &nbsp; <a href='http://localhost:1313/posts'>posts</a>&nbsp; ・ &nbsp; <a href='http://localhost:1313/postsgoing-abroad'>going-abroad</a></div></header>
           <nav class="terminal-menu">
             <ul vocab="https://schema.org/" typeof="BreadcrumbList">
                 
-                <li><a href="http://localhost:1313/about/" typeof="ListItem">about/</a></li>
+                <li><a href="http://localhost:1313/about/" typeof="ListItem">About</a></li>
                 
-                <li><a href="http://localhost:1313/posts/" typeof="ListItem">posts/</a></li>
+                <li><a href="http://localhost:1313/posts/" typeof="ListItem">Posts</a></li>
                 
             </ul>
           </nav>
@@ -343,7 +345,7 @@ figure {
         
 <h1>Going Abroad / Some kind of introduction</h1>
 
-Aug. 5, 2024
+<span style="opacity:0.5;">Aug. 5, 2024</span>
 
 
 <br/><br/>
@@ -355,7 +357,7 @@ Aug. 5, 2024
 
 
         <div class="footer">
-    <span style="font-size: 12px;">This is just a simple page to keep track of what I've been up to lately. If you want to reach me, do so either on <b>sebni@itu.dk</b> (work) or <b>sebastian.m.nicolajsen</b> (for personal inquiries). </span>
+    <span style="font-size: 14px;">This is just a simple page to keep track of what I've been up to lately. If you want to reach me, do so either on <b>sebni@itu.dk</b> (work) or <b>sebastian.m.nicolajsen</b> (for personal inquiries). </span>
 </div>
 
     </div>

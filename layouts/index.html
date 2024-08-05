@@ -15,9 +15,9 @@ This is a simple <b>travel log</b> to keep track of what I'm doing and sharing s
 {{ with .Site.GetPage "/posts" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
         <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            <p >
+                <div style="font-size-adjust: 0.5;" class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+                <h1 style="font-size-adjust: 0.5;"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
                 {{ .Summary }}
             </p>
         </div>    
