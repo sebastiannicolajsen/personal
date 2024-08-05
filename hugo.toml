@@ -1,0 +1,26 @@
+baseurl = "https://example.com/"
+title = "Sebastian Nicolajsen"
+theme = "hugo-theme-console"
+languageCode = "en-us"
+
+[params]
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting = true
+  google_maps_api_key = "AIzaSyBPifOhPhwVt-gU8DfPxq_2vcLZlBLW70I"
+  google_maps_map_id = "1c4b9624c077131"
+  font = "https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+  font_name = "DM Mono"
+  markerBorder = "#FAFAFA" 
+  markerBackground = "#FAFAFA"
+  markerColor = "#00000"
+  # Set the animation style -- https://animate.style/
+  # To disable animations, please remove or comment animationStyle parameter
+  animateStyle = "animated zoomIn fast" 
+
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"

@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<h1>Travel log</h1>
+
+<p>
+This is a simple <b>travel log</b> to keep track of what I'm doing and sharing some of the details. Check out recent posts for pictures or select from the map below! For more information regarding my current travels see  <a href="about/">here</a>.
+</p>
+<br/>
+
+{{- partial "map.html" . -}}
+
+<h1>Latest log entries</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/posts" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <p>
+                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>    
+    {{ end }}
+{{ end }}
+</div>
+
+
+{{ end }}
