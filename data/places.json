@@ -1,16 +1,10 @@
 {
     "places": [
         {
-            "name":"test1",
-            "ref":"ref1",
-            "lat": 30.773972, 
-            "lng": -118.431297
-        },
-        {
-            "name":"test2",
-            "ref":"ref2",
-            "lat": 30.773972, 
-            "lng": -120.431297
+            "name":"Going abroad",
+            "ref":"going-abroad",
+            "lat": 37.8647,
+            "lng": -122.4248608
         }
     ]
 }
