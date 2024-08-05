@@ -1,0 +1,1 @@
+A simple **hugo** page used as a travel log - follow along at [nicolajsen.com](nicolajsen.com) 
