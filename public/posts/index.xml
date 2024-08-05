@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sebastian Nicolajsen</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://nicolajsen.com/posts/</link>
     <description>Recent content in Posts on Sebastian Nicolajsen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nicolajsen.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Going Abroad / Some kind of introduction</title>
-      <link>http://localhost:1313/posts/going-abroad/</link>
+      <link>https://nicolajsen.com/posts/going-abroad/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/going-abroad/</guid>
+      <guid>https://nicolajsen.com/posts/going-abroad/</guid>
       <description>The 7th marked our leave from Denmark. However, lots of preparation has gone into getting here. I actually believe the idea of going to the U.S. started more than a year ago, a couple of weeks after I began my Ph.D. on January 1st 2023. However, the initial funding which made me and my supervisor dream of potential destinations didn&amp;rsquo;t succeed.&#xA;All of a sudden I found myself without a plan, but with an agreement to stay at U.</description>
     </item>
   </channel>
