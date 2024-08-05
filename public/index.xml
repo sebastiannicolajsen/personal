@@ -23,11 +23,11 @@
       <description>&lt;p&gt;Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About</title>
+      <title>About everything</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>A minimal, responsive and light theme for Hugo inspired by Linux console.&#xA;Installation $ mkdir themes $ cd themes $ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console See the Hugo documentation for more information.&#xA;Configuration Set theme parameter in your config file:&#xA;theme = &amp;#34;hugo-theme-console&amp;#34; License Copyright © 2020 Marcin Mierzejewski&#xA;The theme is released under the MIT License. Check the original theme license for additional licensing information.</description>
+      <description>My name is Sebastian, I&amp;rsquo;m currently studying a Ph.D. in Computer Science, more specifically on the topic of computing education. I made this small travel log to track my future endeavours abroad which starts August 2024. Hopefully I will find the time to combine my interests in photography with the many travels which lie ahead.&#xA;Specifically, I am embarking on an adventure to the U.S. where I&amp;rsquo;m going to be attending U.</description>
     </item>
   </channel>
 </rss>
