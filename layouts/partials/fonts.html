@@ -49,13 +49,45 @@
 
 @media only screen and (max-width: 850px) {
     :root {
-        --global-font-size: 16px;
+        --global-font-size: 18px;
         --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
 }
 
+.nav {}
+
+@media only screen and (max-width: 560px) {
+    .nav {
+        font-size: 24px;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    }
+
+    .navpath {
+        margin-left: auto !important;
+        width: auto !important;
+        margin-right: auto !important;
+    }
+
+    .navmenu {
+        margin-top: 0.5em;
+        padding-top: 0.1em;
+        padding-bottom: 0em;
+        margin-left: auto;
+        width: auto;
+        margin-right: auto;
+        border-top: 1px solid rgba(0, 160, 250, .2);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+        
+    }
+
+    .navelement {
+        font-size: 20px;
+    }
+}
 
 .sidebar-heading {
     text-transform: none;

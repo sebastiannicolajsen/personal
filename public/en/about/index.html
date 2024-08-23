@@ -83,13 +83,45 @@ Specifically, I am embarking on an adventure to the U.S. where I&rsquo;m going t
 
 @media only screen and (max-width: 850px) {
     :root {
-        --global-font-size: 16px;
+        --global-font-size: 18px;
         --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
 }
 
+.nav {}
+
+@media only screen and (max-width: 560px) {
+    .nav {
+        font-size: 24px;
+    -webkit-background-clip: padding-box;  
+    background-clip: padding-box;  
+    }
+
+    .navpath {
+        margin-left: auto !important;
+        width: auto !important;
+        margin-right: auto !important;
+    }
+
+    .navmenu {
+        margin-top: 0.5em;
+        padding-top: 0.1em;
+        padding-bottom: 0em;
+        margin-left: auto;
+        width: auto;
+        margin-right: auto;
+        border-top: 1px solid rgba(0, 160, 250, .2);
+    -webkit-background-clip: padding-box;  
+    background-clip: padding-box;  
+        
+    }
+
+    .navelement {
+        font-size: 20px;
+    }
+}
 
 .sidebar-heading {
     text-transform: none;
@@ -321,35 +353,35 @@ figure {
 
 </style><body class="terminal">
     <div class="container">
-      <div class="terminal-nav">
-        <header class="terminal-logo" style="width: 100%">
-          <div style="display: flex; align-items: left; padding-top: 15px">
+      <div class="terminal-nav nav">
+        <header class="terminal-logo navpath" style="width: 100%">
+          <div class="" style="display: flex; align-items: left; padding-top: 15px">
               
             <a
               href="http://localhost:1313/en/"
-              class="no-style "
+              class="no-style  "
               >Travel log</a
             >
              &nbsp; / &nbsp;
-            <a href='http://localhost:1313/about'>about</a>  
+            <a href='/en/about'>about</a>  
           </div>
         </header>
-        <nav class="terminal-menu">
+        <nav class="terminal-menu navmenu">
           <ul vocab="https://schema.org/" typeof="BreadcrumbList">
             
-            <li>
+            <li class="navelement">
               <a href="/en/about/" typeof="ListItem">About</a>
             </li>
             
-            <li>
+            <li class="navelement">
               <a href="/en/posts/" typeof="ListItem">Posts</a>
             </li>
             
-            <li>
+            <li class="navelement">
               <a href="/en/photos/" typeof="ListItem">Photos</a>
             </li>
             
-            <li>
+            <li class="navelement">
               [ 
                 
                   <a href="/dk/">Dansk</a>  

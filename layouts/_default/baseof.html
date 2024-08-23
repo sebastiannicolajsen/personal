@@ -35,30 +35,30 @@
   {{- partial "fonts.html" . -}}
   <body class="terminal">
     <div class="container">
-      <div class="terminal-nav">
-        <header class="terminal-logo" style="width: 100%">
-          <div style="display: flex; align-items: left; padding-top: 15px">
+      <div class="terminal-nav nav">
+        <header class="terminal-logo navpath" style="width: 100%">
+          <div class="" style="display: flex; align-items: left; padding-top: 15px">
             {{ $url := replace .Permalink ( printf "%s%s" .Site.BaseURL $.Lang) "" }} {{
             $.Scratch.Add "path" .Site.BaseURL }} 
             <a
               href="{{ absLangURL "" }}"
-              class="no-style {{ with .Site.Params.TitleCutting }}site-name{{ end }}"
+              class="no-style  {{ with .Site.Params.TitleCutting }}site-name{{ end }}"
               >{{ .Site.Title }}</a
             >
             {{ range $index, $element := split $url "/" }}{{ $.Scratch.Add
             "path" $element }}{{ if ne $element "" }}&nbsp; / &nbsp;
-            <a href='{{ $.Scratch.Get "path" | absURL }}'>{{ . }}</a>{{
+            <a href='{{ relLangURL ($.Scratch.Get "path") }}'>{{ . }}</a>{{
             $.Scratch.Add "&nbsp; / &nbsp;" "path" }}{{ end }} {{ end }}
           </div>
         </header>
-        <nav class="terminal-menu">
+        <nav class="terminal-menu navmenu">
           <ul vocab="https://schema.org/" typeof="BreadcrumbList">
             {{ range .Site.Params.navlinks }}
-            <li>
+            <li class="navelement">
               <a href="{{ relLangURL .url }}" typeof="ListItem">{{ .name }}</a>
             </li>
             {{ end }}
-            <li>
+            <li class="navelement">
               [ {{ range $.Site.Home.AllTranslations }}
                 {{ if ne .Lang $.Lang }}
                   <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>  
