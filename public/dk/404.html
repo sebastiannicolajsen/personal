@@ -82,13 +82,45 @@
 
 @media only screen and (max-width: 850px) {
     :root {
-        --global-font-size: 16px;
+        --global-font-size: 18px;
         --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
 }
 
+.nav {}
+
+@media only screen and (max-width: 560px) {
+    .nav {
+        font-size: 30em;
+    -webkit-background-clip: padding-box;  
+    background-clip: padding-box;  
+    }
+
+    .navpath {
+        margin-left: auto !important;
+        width: auto !important;
+        margin-right: auto !important;
+    }
+
+    .navmenu {
+        margin-top: 0.5em;
+        padding-top: 0.1em;
+        padding-bottom: 0em;
+        margin-left: auto;
+        width: auto;
+        margin-right: auto;
+        border-top: 1px solid rgba(0, 160, 250, .2);
+    -webkit-background-clip: padding-box;  
+    background-clip: padding-box;  
+        
+    }
+
+    .navelement {
+        font-size: 20px;
+    }
+}
 
 .sidebar-heading {
     text-transform: none;
@@ -320,35 +352,35 @@ figure {
 
 </style><body class="terminal">
     <div class="container">
-      <div class="terminal-nav">
-        <header class="terminal-logo" style="width: 100%">
-          <div style="display: flex; align-items: left; padding-top: 15px">
+      <div class="terminal-nav nav">
+        <header class="terminal-logo navpath" style="width: 100%">
+          <div class="" style="display: flex; align-items: left; padding-top: 15px">
               
             <a
               href="http://localhost:1313/dk/"
-              class="no-style "
+              class="no-style  "
               >Rejsedagbog</a
             >
              &nbsp; / &nbsp;
-            <a href='http://localhost:1313/404.html'>404.html</a> 
+            <a href='/dk/404.html'>404.html</a> 
           </div>
         </header>
-        <nav class="terminal-menu">
+        <nav class="terminal-menu navmenu">
           <ul vocab="https://schema.org/" typeof="BreadcrumbList">
             
-            <li>
+            <li class="navelement">
               <a href="/dk/about/" typeof="ListItem">Om</a>
             </li>
             
-            <li>
+            <li class="navelement">
               <a href="/dk/posts/" typeof="ListItem">Opslag</a>
             </li>
             
-            <li>
+            <li class="navelement">
               <a href="/dk/photos/" typeof="ListItem">Billeder</a>
             </li>
             
-            <li>
+            <li class="navelement">
               [ 
                  
                 
