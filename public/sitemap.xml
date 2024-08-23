@@ -1,44 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
     
-        
-        <url>
-            <loc>https://nicolajsen.com/posts/going-abroad/</loc>
-            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-        </url>
-        
+      <lastmod>2024-08-05T00:00:00+00:00</lastmod>
     
-        
-        <url>
-            <loc>https://nicolajsen.com/posts/</loc>
-            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-        </url>
-        
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/dk/sitemap.xml</loc>
     
-        
-        <url>
-            <loc>https://nicolajsen.com/</loc>
-            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-        </url>
-        
+      <lastmod>2024-08-05T00:00:00+00:00</lastmod>
     
-        
-        <url>
-            <loc>https://nicolajsen.com/about/</loc>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://nicolajsen.com/categories/</loc>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://nicolajsen.com/tags/</loc>
-        </url>
-        
-    
-</urlset>
+  </sitemap>
+  
+</sitemapindex>

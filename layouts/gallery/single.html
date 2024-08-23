@@ -2,14 +2,17 @@
 <h1>{{ .Page.Title }}</h1>
 
 {{ if and (isset .Params "image") .Params.image }}
-    {{ $image := .Page.Resources.GetMatch .Params.image }}
+    {{ $image := resources.Get .Params.image }}
     {{ with $image }}
-        {{ $thumb := .Resize "1000x" }}
-        {{ printf `<img src="%s" alt="%s" class="img-responsive gallery-image">` $thumb.RelPermalink .Title | safeHTML }}
+        {{ $thumb := .Resize "850x" }}
+        {{ printf `<img src="%s"   class="img-responsive gallery-image">` $thumb.RelPermalink | safeHTML }}
     {{end}}
 {{ end }}
 
 {{ .Content }}
+
+<h1> {{ site.Params.galleryview }}</h1>
+{{- partial "map.html" (dict "Context" .  "show" false) -}}
 {{ template "_internal/disqus.html" . }}
 
 {{ end }}

@@ -2,8 +2,16 @@
     "places": [
         {
             "name":"Going abroad",
+            "type":"post",
             "ref":"going-abroad",
             "lat": 37.868487,
+            "lng": -122.246040
+        },
+        {
+            "name":"other gallery",
+            "type":"location",
+            "ref":"chicago-us",
+            "lat": 38.868487,
             "lng": -122.246040
         }
     ]

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/posts/going-abroad/</loc>
+            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/posts/going-abroad/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/going-abroad/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/posts/</loc>
+            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/posts/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/</loc>
+            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/photos/arizona-us/</loc>
+            <lastmod>2020-01-21T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/arizona-us/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/arizona-us/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/photos/chicago-us/</loc>
+            <lastmod>2020-01-21T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/chicago-us/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/chicago-us/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/photos/</loc>
+            <lastmod>2020-01-21T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/about/</loc>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/about/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/about/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/categories/</loc>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/categories/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/categories/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/tags/</loc>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/tags/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/tags/"/>
+        </url>
+        
+    
+</urlset>

@@ -3,13 +3,25 @@
 <h1>Travel log</h1>
 
 <p>
-This is a simple <b>travel log</b> to keep track of what I'm doing and sharing some of the details. Mostly for myself, perhaps for others! Check out recent posts for pictures or select from the map below! For more information regarding my current travels see  <a href="about/">here</a>.
+    {{ if eq (printf "%s" .Site.Language) "en"}}
+    This is a simple <b>travel log</b> to keep track of what I'm doing and sharing some of the details. Mostly for myself, perhaps for others! Check out recent posts for pictures or select from the map below! For more information regarding my current travels see  <a href="{{urls.RelLangURL "/about"}}">here</a>.
+    {{ else if eq (printf "%s" .Site.Language)  "dk"}}
+    Her er en lille <b>Rejsedagbog</b> der er beregnet til at holde styr på hvad jeg går og laver og dele nogle af detaljerne undervejs. Det mest for mig selv, men måske andre også finder det interessant. Vælg områder på kortet forneden og se billeder / læs mere om mine eventyr. For mere information om rejserne se <a href="{{urls.RelLangURL "/about"}}">her</a>.
+    {{ end }}
 </p>
 <br/>
 
-{{- partial "map.html" . -}}
+{{- partial "map.html" (dict "Context" .  "show" "true") -}}
 
-<h1>Latest log entries</h1>
+
+<h1>
+    {{ if eq (printf "%s" .Site.Language) "en"}}
+        Latest log entries
+    {{ else if eq (printf "%s" .Site.Language)  "dk"}}
+        Nyeste opslag 
+    {{ end }}
+</h1>
+
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
@@ -21,6 +33,28 @@ This is a simple <b>travel log</b> to keep track of what I'm doing and sharing s
                 {{ .Summary }}
             </p>
         </div>    
+    {{ end }}
+{{ end }}
+</div>
+
+<h1>
+    {{ if eq (printf "%s" .Site.Language) "en"}}
+        Latest photos
+    {{ else if eq (printf "%s" .Site.Language)  "dk"}}
+        Nyeste billeder
+    {{ end }}
+</h1>
+
+<div class="image-grid">
+{{ with .Site.GetPage "/photos" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
+        <a href="{{ .Permalink }}" title="{{ .Title }}">
+        {{ $image := .Page.Resources.GetMatch .Params.image }}
+        {{ with $image }}
+            {{ $thumb := .Resize "400x" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+        {{end}}
+        </a>
     {{ end }}
 {{ end }}
 </div>

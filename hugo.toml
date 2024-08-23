@@ -1,25 +1,82 @@
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
 baseurl = "https://nicolajsen.com"
 title = "Sebastian Nicolajsen"
-theme = "hugo-theme-console"
-languageCode = "en-us"
+theme = "hugo-theme-console" 
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 
 [params]
-  # Cutting off the page title to two chars for mobile (console-demo -> co)
   google_maps_api_key = "AIzaSyBPifOhPhwVt-gU8DfPxq_2vcLZlBLW70I"
   google_maps_map_id = "1c4b9624c077131"
   font = "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
   font_name = "EB Garamond"
-  markerBorder = "#FAFAFA" 
-  markerBackground = "#FAFAFA"
-  markerColor = "#00000"
+  markerLocationBorder = "#9FDFF9" 
+  markerLocationBackground = "#6CCFF6"
+  markerLocationColor = "#373F43"
+  markerPostBorder = "#D9D4D3" 
+  markerPostBackground = "#BFB7B6"
+  markerPostColor = "#373F43"
+
   # Set the animation style -- https://animate.style/
   # To disable animations, please remove or comment animationStyle parameter
-  animateStyle = "animated zoomIn fast" 
 
-  [[params.navlinks]]
-  name = "About"
-  url = "about/"
 
-  [[params.navlinks]]
-  name = "Posts"
-  url = "posts/"
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Travel log'
+    weight = 0
+    [languages.en.params]
+        galleryview = "Pictures from other locations"
+        [[languages.en.params.navlinks]]
+          name = "About"
+          url = "about/"
+        [[languages.en.params.navlinks]]
+          name = "Posts"
+          url = "posts/"
+        [[languages.en.params.navlinks]]
+          name = "Photos"
+          url = "photos/"
+  [languages.dk]
+    disabled = false
+    languageCode = 'dk'
+    languageDirection = 'ltr'
+    languageName = 'Dansk'
+    title = 'Rejsedagbog'
+    weight = 0
+    [languages.dk.params]
+      galleryview = "Billeder fra andre steder"
+      [[languages.dk.params.navlinks]]
+        name = "Om"
+        url = "about/"
+      [[languages.dk.params.navlinks]]
+        name = "Opslag"
+        url = "posts/"
+      [[languages.dk.params.navlinks]]
+        name = "Billeder"
+        url = "photos/"
+
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'en'
+
+[[module.mounts]]
+source = 'content/dk'
+target = 'content'
+lang = 'dk'
+
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'dk'
+    

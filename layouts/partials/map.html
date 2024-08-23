@@ -1,4 +1,15 @@
 <div style="background-color: black; width: 100%; height: 300px" id="map"></div>
+<div style="text-align: center; opacity:1">
+
+{{ if eq (printf "%s" .show) "true"}}
+  {{ if eq (printf "%s" .Context.Site.Language) "en"}}
+    <span style="color:{{.Context.Site.Params.markerLocationBackground}};background-color:#F9F9F;">Markers</span> (G) in this color links to series of pictures and <span style="color:{{.Context.Site.Params.markerPostBackground}};">Markers</span> (P) in this color refers to posts.
+  {{ else if eq (printf "%s" .Context.Site.Language)  "dk"}}
+    <span style="color:{{.Context.Site.Params.markerLocationBackground}};">Markører</span> (G) i denne farve linker til billedserier og <span style="color:{{.Context.Site.Params.markerPostBackground}};">Markører</span> (P) i denne farve linker til opslag.
+  {{ end }}
+{{end}}
+</div>
+
 
 <style>
   a[href^="http://maps.google.com/maps"],
@@ -53,7 +64,7 @@ a[href^="https://www.google.com/maps"]
       ? console.warn(p + " only loads once. Ignoring:", g)
       : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
   })({
-    key: "{{ .Site.Params.google_maps_api_key }}",
+    key: "{{ .Context.Site.Params.google_maps_api_key }}",
     v: "weekly",
   });
 
@@ -68,7 +79,7 @@ a[href^="https://www.google.com/maps"]
     // Short namespaces can be used.
     map = new Map(document.getElementById("map"), {
       center: { lat: 30.773972, lng: -118.431297 },
-      mapId: "{{ .Site.Params.google_maps_map_id }}",
+      mapId: "{{ .Context.Site.Params.google_maps_map_id }}",
       zoom: 4,
       disableDefaultUI: true,
       zoomControl: true,
@@ -78,48 +89,53 @@ a[href^="https://www.google.com/maps"]
     });
 
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let labelIndex = 0;
+    let postIndex = 0;
+    let pictureIndex = 0;
 
-    function marker(lat, lng, title, ref, map) {
-      const svgMarker = {
-        path: "M-1.547 12l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM0 0q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
-        fillColor: "blue",
-        fillOpacity: 0.6,
-        strokeWeight: 0,
-        rotation: 0,
-        scale: 2,
-        anchor: new google.maps.Point(0, 20),
+    function marker(lat, lng, title, ref, type, map) {
+      const v = "{{.show}}"
+
+      if(v === "false" && type === "post") return;
+
+      const addr = "/{{.Context.Lang}}/" +  (type === "post" ? "/posts/" : "/photos/")
+
+      const typeDic = {
+        location: {
+          glyphColor: "{{ .Context.Site.Params.markerLocationColor}}",
+          background: "{{ .Context.Site.Params.markerLocationBackground}}",
+          borderColor: "{{ .Context.Site.Params.markerLocationBorder}}",
+        },
+        post: {
+          glyphColor: "{{ .Context.Site.Params.markerPostColor}}",
+          background: "{{ .Context.Site.Params.markerPostBackground}}",
+          borderColor: "{{ .Context.Site.Params.markerPostBorder}}",
+        },
       };
-
-      const icon = document.createElement("div");
-
-      icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
-
       const faPin = new PinElement({
-        glyph: `${labels[labelIndex % labels.length]}`,
-        glyphColor: "{{ .Site.Params.markerColor}}",
-        background: "{{ .Site.Params.markerBackground}}",
-        borderColor: "{{ .Site.Params.markerBorder}}",
+        glyph: type === "post" ? `P${postIndex}` : `G${pictureIndex}`,
+        glyphColor: typeDic[type].glyphColor,
+        background: typeDic[type].background,
+        borderColor: typeDic[type].borderColor,
       });
 
-      
-      labelIndex++;
+      if(type === "post") postIndex++; else pictureIndex++;
       const marker = new AdvancedMarkerElement({
         position: { lat: Number(lat), lng: Number(lng) },
         map,
         title: title,
         content: faPin.element,
-        gmpClickable: true
+        gmpClickable: true,
       });
       marker.addListener("click", ({ domEvent, latLng }) => {
-        window.location = "/posts/" + ref;
+        window.location = addr + ref;
       });
     }
 
-    ("{{range .Site.Data.places.places}}");
-    marker("{{.lat}}", "{{.lng}}", "{{.name}}", "{{.ref}}", map);
+    ("{{range .Context.Site.Data.places.places}}");
+    marker("{{.lat}}", "{{.lng}}", "{{.name}}", "{{.ref}}", "{{.type}}", map);
     ("{{end}}");
   }
 
   initMap();
 </script>
+

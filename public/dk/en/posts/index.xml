@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Rejsedagbog</title>
+    <link>http://localhost:1313/dk/en/posts/</link>
+    <description>Recent content in Posts on Rejsedagbog</description>
+    <generator>Hugo</generator>
+    <language>dk</language>
+    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/dk/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Going Abroad / Some kind of introduction</title>
+      <link>http://localhost:1313/dk/en/posts/going-abroad/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dk/en/posts/going-abroad/</guid>
+      <description>The 7th marked our leave from Denmark. However, lots of preparation has gone into getting here. I actually believe the idea of going to the U.S. started more than a year ago, a couple of weeks after I began my Ph.D. on January 1st 2023. However, the initial funding which made me and my supervisor dream of potential destinations didn&amp;rsquo;t succeed.&#xA;All of a sudden I found myself without a plan, but with an agreement to stay at U.</description>
+    </item>
+  </channel>
+</rss>
