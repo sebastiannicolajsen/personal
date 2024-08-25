@@ -9,7 +9,25 @@
     {{end}}
 {{ end }}
 
+
+
 {{ .Content }}
+
+{{if and (isset .Params "directory") .Params.directory}}
+    {{$url := printf  "%s%s" "./assets" .Params.directory}}
+    {{$dir := .Params.directory}}
+    {{$header := .Params.image}}
+    {{range readDir $url}}
+        {{ $imgurl := printf "%s%s%s" $dir "/" .Name}}
+        {{if ne  $header $imgurl}}
+            {{ $image := resources.Get $imgurl}}
+            {{with $image}}
+                {{ $thumb := .Resize "850x" }}
+                {{ printf `<img src="%s"   class="img-responsive gallery-image">` $thumb.RelPermalink | safeHTML }}
+            {{end}}
+        {{end}}
+    {{end}}
+{{end}}
 
 <h1> {{ site.Params.galleryview }}</h1>
 {{- partial "map.html" (dict "Context" .  "show" false) -}}

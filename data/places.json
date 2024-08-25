@@ -8,11 +8,20 @@
             "lng": -122.246040
         },
         {
-            "name":"other gallery",
+            "name":"Home in Berkeley",
             "type":"location",
-            "ref":"chicago-us",
-            "lat": 38.868487,
-            "lng": -122.246040
+            "ref":"home",
+            "lat": 37.86831808920896, 
+            "lng": -122.24600987316495
+        },
+        {
+            "name":"Black Sands Beach",
+            "type":"location",
+            "ref":"blacksandbeach",
+            "lat": 37.824380578324515, 
+            "lng": -122.50872674810267
         }
+
     ]
+
 }

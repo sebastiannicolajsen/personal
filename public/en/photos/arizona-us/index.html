@@ -107,7 +107,8 @@
 
 @media only screen and (max-width: 560px) {
     .nav {
-        font-size: 1.6em;
+        font-size: 1.5em;
+        font-size: 6vw;
     -webkit-background-clip: padding-box;  
     background-clip: padding-box;  
     }
@@ -133,6 +134,7 @@
 
     .navelement {
         font-size: 1.3em;
+        font-size: 5.5vw;
     }
 }
 
@@ -531,7 +533,7 @@ a[href^="https://www.google.com/maps"]
         },
       };
       const faPin = new PinElement({
-        glyph: type === "post" ? `P${postIndex}` : `G${pictureIndex}`,
+        glyph: type === "post" ? `P` : `G`,
         glyphColor: typeDic[type].glyphColor,
         background: typeDic[type].background,
         borderColor: typeDic[type].borderColor,
@@ -553,7 +555,7 @@ a[href^="https://www.google.com/maps"]
     ("");
     marker("37.868487", "-122.24604", "Going abroad", "going-abroad", "post", map);
     ("");
-    marker("38.868487", "-122.24604", "other gallery", "chicago-us", "location", map);
+    marker("37.86831808920896", "-122.24600987316495", "Home in Berkeley", "home", "location", map);
     ("");
   }
 
@@ -563,7 +565,12 @@ a[href^="https://www.google.com/maps"]
 
 
  <div class="footer">
-    <span style="font-size: 14px;">This is just a simple page to keep track of what I've been up to lately. If you want to reach me, do so either on <b>sebni@itu.dk</b> (work) or <b>sebastian.m.nicolajsen</b> (for personal inquiries). </span>
+    <span style="font-size: 14px;">
+        
+            This is just a simple page to keep track of what I've been up to lately. If you want to reach me, do so either on <b>sebni@itu.dk</b> (work) or <b>sebastian.m.nicolajsen@gmail.com</b> (for personal inquiries). </span>
+        
+        
+        
 </div>
 
     </div>

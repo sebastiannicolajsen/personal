@@ -520,7 +520,7 @@ a[href^="https://www.google.com/maps"]
         },
       };
       const faPin = new PinElement({
-        glyph: type === "post" ? `P${postIndex}` : `G${pictureIndex}`,
+        glyph: type === "post" ? `P` : `G`,
         glyphColor: typeDic[type].glyphColor,
         background: typeDic[type].background,
         borderColor: typeDic[type].borderColor,
@@ -542,7 +542,9 @@ a[href^="https://www.google.com/maps"]
     ("");
     marker("37.868487", "-122.24604", "Going abroad", "going-abroad", "post", map);
     ("");
-    marker("38.868487", "-122.24604", "other gallery", "chicago-us", "location", map);
+    marker("37.86831808920896", "-122.24600987316495", "Home in Berkeley", "home", "location", map);
+    ("");
+    marker("37.824380578324515", "-122.50872674810267", "Black Sands Beach", "blacksandbeach", "location", map);
     ("");
   }
 
@@ -580,16 +582,19 @@ All of a sudden I found myself without a plan, but with an agreement to stay at 
 <div class="image-grid">
 
     
-        <a href="http://localhost:1313/en/photos/arizona-us/" title="Arizona, US">
+        <a href="http://localhost:1313/en/photos/blacksandbeach/" title="Black Sand Beach, CA, US">
         
         
             
-            <img src="/en/photos/arizona-us/arizona-us_hu35e4265996bb830b94805d31f876880a_479937_400x0_resize_q75_box.jpg" alt="arizona-us.jpg" class="img-responsive">
+            <img src="/photos/blacksandbeach/DSC05380_hu2d91bdd1822265656d9b93414b6b19a8_7747468_400x0_resize_q75_box.jpg" alt="/photos/blacksandbeach/DSC05380.jpg" class="img-responsive">
         
         </a>
     
-        <a href="http://localhost:1313/en/photos/chicago-us/" title="Chicago, US">
+        <a href="http://localhost:1313/en/photos/home/" title="Berkeley, CA, US">
         
+        
+            
+            <img src="/photos/home/DSC05331_hu8494e4a773ca7ee6891df53587a378b8_9053104_400x0_resize_q75_box.jpg" alt="/photos/home/DSC05331.jpg" class="img-responsive">
         
         </a>
     
@@ -598,7 +603,12 @@ All of a sudden I found myself without a plan, but with an agreement to stay at 
 
 
  <div class="footer">
-    <span style="font-size: 14px;">This is just a simple page to keep track of what I've been up to lately. If you want to reach me, do so either on <b>sebni@itu.dk</b> (work) or <b>sebastian.m.nicolajsen</b> (for personal inquiries). </span>
+    <span style="font-size: 14px;">
+        
+            This is just a simple page to keep track of what I've been up to lately. If you want to reach me, do so either on <b>sebni@itu.dk</b> (work) or <b>sebastian.m.nicolajsen@gmail.com</b> (for personal inquiries). </span>
+        
+        
+        
 </div>
 
     </div>

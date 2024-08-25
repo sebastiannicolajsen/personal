@@ -4,6 +4,42 @@
     
         
         <url>
+            <loc>http://localhost:1313/en/photos/blacksandbeach/</loc>
+            <lastmod>2024-08-08T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/blacksandbeach/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/blacksandbeach/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/photos/</loc>
+            <lastmod>2024-08-08T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/</loc>
+            <lastmod>2024-08-08T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/"/>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/en/photos/home/</loc>
+            <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/home/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/home/"/>
+        </url>
+        
+    
+        
+        <url>
             <loc>http://localhost:1313/en/posts/going-abroad/</loc>
             <lastmod>2024-08-05T00:00:00+00:00</lastmod>
             <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/posts/going-abroad/"/>
@@ -17,42 +53,6 @@
             <lastmod>2024-08-05T00:00:00+00:00</lastmod>
             <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/posts/"/>
             <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/"/>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://localhost:1313/en/</loc>
-            <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/"/>
-            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/"/>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://localhost:1313/en/photos/arizona-us/</loc>
-            <lastmod>2020-01-21T00:00:00+00:00</lastmod>
-            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/arizona-us/"/>
-            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/arizona-us/"/>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://localhost:1313/en/photos/chicago-us/</loc>
-            <lastmod>2020-01-21T00:00:00+00:00</lastmod>
-            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/chicago-us/"/>
-            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/chicago-us/"/>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://localhost:1313/en/photos/</loc>
-            <lastmod>2020-01-21T00:00:00+00:00</lastmod>
-            <xhtml:link rel="alternate" hreflang="dk" href="http://localhost:1313/dk/photos/"/>
-            <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/en/photos/"/>
         </url>
         
     
