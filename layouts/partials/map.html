@@ -1,4 +1,4 @@
-<div style="background-color: black; width: 100%; height: 300px" id="map"></div>
+<div style="background-color: black; width: 100%; height: 300px;opacity:0.5" id="map"></div>
 <div style="text-align: center; opacity:1">
 
 {{ if eq (printf "%s" .show) "true"}}
@@ -7,6 +7,13 @@
   {{ else if eq (printf "%s" .Context.Site.Language)  "dk"}}
     <span style="color:{{.Context.Site.Params.markerLocationBackground}};">Markører</span> (G) i denne farve linker til billedserier og <span style="color:{{.Context.Site.Params.markerPostBackground}};">Markører</span> (P) i denne farve linker til opslag.
   {{ end }}
+  {{ else }}
+  {{ if eq (printf "%s" .Context.Site.Language) "en"}}
+    <span>Clicking a marker leads to a gallery of a certain location. Zoom to see all markers.</span>
+  {{ else if eq (printf "%s" .Context.Site.Language)  "dk"}}
+  <span>Ved tryk på en markør føres du til et galleri med billeder fra lokationen. Zoom ind for at se alle markører.</span>
+  {{ end }}
+
 {{end}}
 </div>
 
@@ -112,7 +119,7 @@ a[href^="https://www.google.com/maps"]
         },
       };
       const faPin = new PinElement({
-        glyph: type === "post" ? `P` : `G`,
+        glyph: type === "post" ? `P` : `X`,
         glyphColor: typeDic[type].glyphColor,
         background: typeDic[type].background,
         borderColor: typeDic[type].borderColor,

@@ -46,7 +46,7 @@
               >{{ .Site.Title }}</a
             >
             {{ range $index, $element := split $url "/" }}{{ $.Scratch.Add
-            "path" $element }}{{ if ne $element "" }}&nbsp; / &nbsp;
+            "path" (printf "/%s" $element) }}{{ if ne $element "" }}&nbsp; / &nbsp;
             <a href='{{ relLangURL ($.Scratch.Get "path") }}'>{{ . }}</a>{{
             $.Scratch.Add "&nbsp; / &nbsp;" "path" }}{{ end }} {{ end }}
           </div>
@@ -58,12 +58,12 @@
               <a href="{{ relLangURL .url }}" typeof="ListItem">{{ .name }}</a>
             </li>
             {{ end }}
-            <li class="navelement">
-              [ {{ range $.Site.Home.AllTranslations }}
+            <li class="navelement" style="opacity:0.5;">
+              {{ range $.Site.Home.AllTranslations }}
                 {{ if ne .Lang $.Lang }}
                   <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>  
                   {{ end }} 
-                {{ end }}]
+                {{ end }}
             </li>
           </ul>
         </nav>
