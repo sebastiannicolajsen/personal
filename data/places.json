@@ -20,7 +20,139 @@
             "ref":"blacksandbeach",
             "lat": 37.824380578324515, 
             "lng": -122.50872674810267
+        },
+        {
+            "name":"Marshall's Beach",
+            "type":"location",
+            "ref":"marshallbeach",
+            "lat": 37.802600547992895, 
+            "lng": -122.47962034695102
+        },
+        {
+            "name":"Palace of Fine Arts",
+            "type":"location",
+            "ref":"palacefinearts",
+            "lat": 37.803117268097935, 
+            "lng": -122.44844456010364
+        },
+        {
+            "name":"Moro rock",
+            "type":"location",
+            "ref":"mororock",
+            "lat": 36.54696654762453, 
+            "lng": -118.7656458389808
+        },
+
+        {
+            "name":"Big Trees Trail",
+            "type":"location",
+            "ref":"bigtreetrail",
+            "lat": 36.567194579584985, 
+            "lng": -118.7682824043244
+        },
+
+        {
+            "name":"General Sherman Tree",
+            "type":"location",
+            "ref":"sherman",
+            "lat": 36.581905849471184, 
+            "lng": -118.7514984897936
+        },
+
+        {
+            "name":"Tokopah Falls",
+            "type":"location",
+            "ref":"tokopah",
+            "lat": 36.615163917948784, 
+            "lng": -118.69588083582387
+        },
+
+        {
+            "name":"Mirror Lake",
+            "type":"location",
+            "ref":"mirrorlake",
+            "lat": 37.76217733100137, 
+            "lng": -119.54911989398083
+        },
+
+        {
+            "name":"Nevada Falls",
+            "type":"location",
+            "ref":"nevadafalls",
+            "lat": 37.72503109543983, 
+            "lng": -119.53323457941735
+        },
+
+        {
+            "name":"Yosemite (General)",
+            "type":"location",
+            "ref":"yosemite",
+            "lat": 37.88645642409042, 
+            "lng": -119.54565653221427
+        },
+
+        {
+            "name":"Big Sur",
+            "type":"location",
+            "ref":"bigsur",
+            "lat": 36.333707445434015, 
+            "lng": -121.89509368184376
+        },
+
+        {
+            "name":"Monterey",
+            "type":"location",
+            "ref":"monterey",
+            "lat": 36.59604210531006, 
+            "lng": -121.89687045152314
+        },
+        {
+            "name":"Kaihalulu Beach",
+            "type":"location",
+            "ref":"kaihalulu",
+            "lat": 20.75336078669334, 
+            "lng": -155.9812476694705
+        },
+
+        {
+            "name":"Road to Hana",
+            "type":"location",
+            "ref":"kaihalulu",
+            "lat": 20.854946807135534, 
+            "lng": -156.16946820287802
+        },
+
+        {
+            "name":"Twin falls",
+            "type":"location",
+            "ref":"twinfalls",
+            "lat": 20.911644070696223, 
+            "lng": -156.24377408330443
+        },
+
+        {
+            "name":"Haleakala",
+            "type":"location",
+            "ref":"haleakala",
+            "lat": 20.770709075159925, 
+            "lng": -156.2418637488307
+        },
+        {
+            "name":"Kihei",
+            "type":"location",
+            "ref":"kihei",
+            "lat": 20.72639554138243, 
+            "lng": -156.4437396911106
+        },
+
+        {
+            "name":"Fisherman's Wharf",
+            "type":"location",
+            "ref":"fishermanswharf",
+            "lat": 37.808675518662206, 
+            "lng": -122.41719123721407
         }
+
 
     ]
 
