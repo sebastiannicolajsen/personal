@@ -151,7 +151,43 @@
             "ref":"fishermanswharf",
             "lat": 37.808675518662206, 
             "lng": -122.41719123721407
+        },
+        {
+            "name":"Golden Gate Park",
+            "type":"location",
+            "ref":"goldengatepark",
+            "lat": 37.77923009296535, 
+            "lng": -122.48465575200684
+        },
+        {
+            "name":"San Francisco (General)",
+            "type":"location",
+            "ref":"sanfrancisco",
+            "lat": 37.76158571370594, 
+            "lng": -122.45137246269503
+        },
+        {
+            "name":"Salesforce Park",
+            "type":"location",
+            "ref":"salesforce",
+            "lat": 37.79171092020511,  
+            "lng": -122.39611516270267
+        },
+        {
+            "name":"Chinatown",
+            "type":"location",
+            "ref":"chinatown",
+            "lat": 37.79462358892916, 
+            "lng": -122.40613841978077
+        },
+        {
+            "name":"U.C. Berkeley",
+            "type":"location",
+            "ref":"university",
+            "lat": 37.87038811426862, 
+            "lng": -122.25948206035788
         }
+
 
 
     ]
