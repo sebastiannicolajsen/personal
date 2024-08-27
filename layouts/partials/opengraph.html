@@ -6,7 +6,7 @@
 {{- with .Params.image }}
 {{ $image := $.Resources.GetMatch . }}
 {{ with $image }}
-  {{ $thumb := .Resize "400x" }}
+  {{ $thumb := .Resize "800x" }}
 <meta property="og:image" content="{{ $thumb.Permalink }}">
 {{ end }}
 {{ end }}

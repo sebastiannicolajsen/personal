@@ -2,14 +2,14 @@
 <h1>{{ .Page.Title }}</h1>
 
 {{ if and (isset .Params "image") .Params.image }} {{ $image := resources.Get
-.Params.image }} {{ with $image }} {{ $thumb := .Resize "850x" }} {{ printf
+.Params.image }} {{ with $image }} {{ $thumb := .Resize "1200x" }} {{ printf
 `<img src="%s" class="img-responsive gallery-image" />` $thumb.RelPermalink |
 safeHTML }} {{end}} {{ end }} {{ .Content }} {{if and (isset .Params
 "directory") .Params.directory}} {{$url := printf "%s%s" "./assets"
 .Params.directory}} {{$dir := .Params.directory}} {{$header := .Params.image}}
 {{range readDir $url}} {{ $imgurl := printf "%s%s%s" $dir "/" .Name}} {{if ne
 $header $imgurl}} {{ $image := resources.Get $imgurl}} {{with $image}} {{ $thumb
-:= .Resize "850x" }} {{ printf `<img
+:= .Resize "1200x" }} {{ printf `<img
   src="%s"
   class="img-responsive gallery-image"
 />` $thumb.RelPermalink | safeHTML }} {{end}} {{end}} {{end}} {{end}}

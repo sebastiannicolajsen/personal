@@ -8,7 +8,7 @@
 
     <a href="{{ .Permalink }}" title="{{ .Title }}">
       {{ $image := resources.Get .Params.image }} {{ with $image }} {{ $thumb :=
-      .Resize "400x" }}
+      .Resize "800x" }}
       <img
         src="{{ $thumb.RelPermalink }}"
         alt="{{ .Title }}"
