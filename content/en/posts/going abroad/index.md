@@ -1,6 +1,6 @@
 +++
 title = "Going Abroad"
-date = "2024-08-05"
+date = "2024-08-13"
 +++
 
 On the 7th of August we traveled to the US as part of my journey to spend the next half year at U.C. Berkeley. While we experienced various nuisances in the form of a hurricane threatening our departure (Debby...) we managed to get to San Francisco albeit a bit later than expected. We picked up our car and drove to Berkeley where Thomas (one of the roommates) had found an amazing apartment overlooking the bay with only a short (but hilly) walk to campus.
