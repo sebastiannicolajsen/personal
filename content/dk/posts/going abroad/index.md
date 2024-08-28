@@ -18,3 +18,4 @@ Vi hentede derefter den sidste værelseskammerat (Victor) i lufthavnen og tog ud
 #- /photos/palacefinearts || /photos/palacefinearts/DSC05757.jpg -#
 
 Endeligt, i løbet af vores ankomstdage, fik vi oplevet sand amerikansk gæstfrihed, da vores søde udlejer inviterede os ovenpå til en lille sammenkomst mellem venner. Mængden af forslag og hjælp med hensyn til fremtidige eventyr, som vi modtog i løbet af de to timer, var intet mindre end fantastisk. Generelt virker de californiske indbyggere intet mindre end fantastiske - både på en genkendelig måde, men også væsentligt anderledes end dem vi møder derhjemme i Danmark.
+
