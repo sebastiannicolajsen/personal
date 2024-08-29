@@ -81,6 +81,10 @@ target = 'content'
 lang = 'dk'
 
 [[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
 source = 'assets/photos'
 target = 'static/photos'
     
