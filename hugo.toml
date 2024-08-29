@@ -83,5 +83,4 @@ lang = 'dk'
 [[module.mounts]]
 source = 'assets/photos'
 target = 'static/photos'
-lang = 'dk'
     
