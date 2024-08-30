@@ -1,7 +1,9 @@
 +++
 date = "2024-08-05T16:25+01:00"
-title = "About everything"
+title = "Lidt om det hele"
 +++
+
+<img style="width:75%;padding-bottom:20px;" src="/photos/landing.jpg" />
 
 Mit navn er Sebastian. På nuværende tidspunkt læser jeg en Ph.D. i datalogi med fokus på programmeringslæring. Jeg har lavet denne lille rejsedagbog for at holde styr på mine kommende eventyr fra start august 2024. Forhåbentligt vil der være tid til at kombinere min interesse for fotografering med mine mange rejser det næste stykke tid!
 

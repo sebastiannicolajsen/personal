@@ -1,6 +1,6 @@
 +++
 title = "Afsted på udveksling"
-date = "2024-08-13"
+date = "2024-08-10"
 +++
 
 Den 7. august rejste vi til USA som en del mit eventyr for at tilbringe det næste halve år på U.C. Berkeley. Selvom vi oplevede forskellige gener i form af en orkan, der truede vores afrejse (Debby...), lykkedes det os at komme til San Francisco, om end lidt senere end forventet. Vi hentede vores bil og kørte til Berkeley, hvor Thomas (en af værelseskammeraterne) havde fundet en fantastisk lejlighed med udsigt over bugten og kun en kort (men bakket) gåtur til campus.

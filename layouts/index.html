@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<h1>Travel log</h1>
+<h1>{{.Site.Title}}</h1>
 
 <p>
     {{ if eq (printf "%s" .Site.Language) "en"}}
@@ -8,6 +8,14 @@
     {{ else if eq (printf "%s" .Site.Language)  "dk"}}
     Her er en lille <b>Rejsedagbog</b> der er beregnet til at holde styr på hvad jeg går og laver og dele nogle af detaljerne undervejs. Det mest for mig selv, men måske andre også finder det interessant. Vælg områder på kortet forneden og se billeder / læs mere om mine eventyr. For mere information om rejserne se <a href="{{urls.RelLangURL "/about"}}">her</a>.
     {{ end }}
+    {{ $sectionPages := where .Site.Pages "Section" "posts" }}
+{{ range last 1 $sectionPages }}
+    {{ if eq (printf "%s" .Site.Language) "en"}}
+        Do you want to read from the beginning, then click <a href="{{.Permalink}}">here</a>.
+    {{ else if eq (printf "%s" .Site.Language)  "dk"}}
+        Vil du læse med fra starten, så klik <a href="{{.Permalink}}">her</a>.
+    {{ end }}
+{{end}}
 </p>
 <br/>
 
@@ -22,6 +30,14 @@
     {{ end }}
 </h1>
 
+{{ $sectionPages := where .Site.Pages "Section" "posts" }}
+{{ range last 1 $sectionPages }}
+    {{ if eq (printf "%s" .Site.Language) "en"}}
+        Do you want to read from the beginning, then click <a href="{{.Permalink}}">here</a>.
+    {{ else if eq (printf "%s" .Site.Language)  "dk"}}
+        Vil du læse med fra starten, så klik <a href="{{.Permalink}}">her</a>.
+    {{ end }}
+{{end}}
 <hr/>
 
 
@@ -32,7 +48,7 @@
             <p >
                 <div style="font-size-adjust: 0.5;" class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
                 <h1 style="font-size-adjust: 0.5;"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                {{ .Summary }} [...]
+                {{ .Summary }} <span style="opacity:0.5;">[...]</span>
             </p>
         </div>    
     {{ end }}
