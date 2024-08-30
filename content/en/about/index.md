@@ -3,7 +3,7 @@ date = "2024-08-05T16:25+01:00"
 title = "About everything"
 +++
 
-<img style="width:75%;padding-bottom:20px;" src="/photos/landing.jpg" />
+![me](/photos/landing.JPG)
 
 My name is Sebastian, I'm currently studying a Ph.D. in Computer Science, more specifically on the topic of computing education. I made this small travel log to track my future endeavours abroad which starts August 2024. Hopefully I will find the time to combine my interests in photography with the many travels which lie ahead.
 
