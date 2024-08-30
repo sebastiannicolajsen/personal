@@ -1,0 +1,20 @@
+
+{{ $enstr := "(Click picture or here for more pictures)" }}
+{{ $dkstr := "(Tryk på billedet eller her for flere billeder)" }}
+
+{{ $isEN := eq (printf "%s" .Site.Language) "en"}}
+{{ $str := cond $isEN $enstr $dkstr}}
+
+{{ $path := .Get "img"}}
+{{ $dir := .Get "path"}}
+{{ $image := resources.GetMatch $path }}
+    {{ with $image }}
+        {{ $thumb := .Resize "1200x" }}
+        <center class="img-responsive" style="margin-bottom: 10px;">
+            <a href='{{ relLangURL $dir }}'>
+                <img class="" src="{{ $thumb.RelPermalink }}" />
+                <div style="padding-top: 5px;">{{$str}}</div>
+            </a>
+        </center>
+    {{ end }}
+

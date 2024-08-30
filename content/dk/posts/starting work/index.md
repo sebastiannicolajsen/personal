@@ -7,4 +7,4 @@ Den 21. havde jeg min første dag på universitetet. Det startede med frokost me
 
 Når det kommer til campus (se billederne nedenfor), er det en helt anden fornemmelse end det, jeg er vant til hjemmefra. IT-Universitetet i København har lidt under 3000 studerende (inklusive deltidsstuderende). U.C. Berkeley har derimod over 48000 studerende. Til forskel fra lignende universiteter hjemme (Københavns Universitet) ligger U.C. Berkeley hovedsageligt på samme campus med utallige smukke gamle og nye bygninger, små skovlignende områder og universitets-busser, der kører rundt på det ret store campus. Jeg kan ikke vente med at udforske mere af de forskellige bygninger, små studieområder og bare området som helhed. For nu er det også blevet mit foretrukne løbested for at se mere af campus. Desuden har der med ankomsten af de nye bachelorstuderende i de seneste uger været en vækst i bylivet omkring den lille universitetsby - folk samles i gaderne, på restauranterne og deltager i de ugentlige "taco Tuesdays".
 
-#- /photos/university || /photos/university/p2.jpg -#
+{{< dir path="/photos/university" img="photos/university/p2.jpg" >}}

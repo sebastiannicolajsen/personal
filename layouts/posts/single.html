@@ -40,24 +40,7 @@
 
 <br/>
 
-
-
-{{ $enstr := "(Click picture or here for more pictures)" }}
-{{ $dkstr := "(Tryk på billedet eller her for flere billeder)" }}
-
-{{ $isEN := eq (printf "%s" .Site.Language) "en"}}
-{{ $str := cond $isEN $enstr $dkstr}}
-
-
-</a></center>
-
-{{ $content := replace .Content `#- ` `<center><a href='{{< ref "` }}
-{{ $content := replace $content ` || ` `" >}}' /> <img src="`}}
-{{ $content := replace $content ` -#` (printf `" /><span>%s</span></a></center>` $str) }} 
-
-
-
-{{$content | .RenderString }}
+{{.Content }}
 
 <span style="opacity:0.7;">/Sebastian</span>
 
