@@ -33,21 +33,30 @@
   </span>
 </div>
 
+
+
 {{ if and (isset .Params "image") .Params.image }} {{ $image := resources.Get
-.Params.image }} {{ with $image }} {{ $thumb := .Resize "1200x" }} {{ printf
+.Params.image }}  {{ with $image }} {{ $thumb := .Resize "1200x" }} {{ printf
 `<img src="%s" class="img-responsive gallery-image" />` $thumb.RelPermalink |
 safeHTML }} {{end}} {{ end }} {{ .Content }} {{if and (isset .Params
 "directory") .Params.directory}} {{$url := printf "%s%s" "./assets"
 .Params.directory}} {{$dir := .Params.directory}} {{$header := .Params.image}}
 {{range readDir $url}} {{ $imgurl := printf "%s%s%s" $dir "/" .Name}} {{if ne
-$header $imgurl}} {{ $image := resources.Get $imgurl}} {{with $image}} {{ $thumb
-:= .Resize "1200x" }} {{ printf `<img
-  src="%s"
-  class="img-responsive gallery-image"
-/>` $thumb.RelPermalink | safeHTML }} {{end}} {{end}} {{end}} {{end}}
+$header $imgurl}} 
+{{ $image_type_arr := split $imgurl "." }}
+{{ $image_ext := index $image_type_arr 1 }}
+{{ if eq $image_ext "jpg" }}
+{{ $image := resources.Get $imgurl}} {{with $image}}  {{ $thumb
+    := .Resize "1200x" }} {{ printf `<img
+      src="%s"
+      class="img-responsive gallery-image"
+    />` $thumb.RelPermalink | safeHTML }} {{end}} {{end}} {{end}} {{end}}
+    
+    <hr/>
+    <div style="opacity: 0.8;width:80%;margin-left: auto; margin-right: auto;">
+{{ end }}
 
-<hr/>
-<div style="opacity: 0.8;width:80%;margin-left: auto; margin-right: auto;">
+
     
 
   {{- partial "map.html" (dict "Context" . "show" false) -}}

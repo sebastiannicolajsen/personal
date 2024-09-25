@@ -5,6 +5,8 @@ baseurl = "https://nicolajsen.com"
 title = "Sebastian Nicolajsen"
 theme = "hugo-theme-console" 
 
+ignoreFiles = [ "\\.DS_Store$" ]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

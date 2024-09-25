@@ -117,7 +117,7 @@
         {
             "name":"Road to Hana",
             "type":"location",
-            "ref":"kaihalulu",
+            "ref":"roadtohana",
             "lat": 20.854946807135534, 
             "lng": -156.16946820287802
         },
@@ -186,6 +186,34 @@
             "ref":"university",
             "lat": 37.87038811426862, 
             "lng": -122.25948206035788
+        },
+        {
+            "name":"Mono Lake",
+            "type":"location",
+            "ref":"monolake",
+            "lat": 37.98200534352153, 
+            "lng": -119.12695346278211
+        },
+        {
+            "name":"Lake Tahoe",
+            "type":"location",
+            "ref":"laketahoe", 
+            "lat": 38.94758550292397, 
+            "lng": -120.10603496870075
+        },
+        {
+            "name":"Twin Peaks",
+            "type":"location",
+            "ref":"twinpeaks",
+            "lat": 37.75158708098576,
+            "lng": -122.44788571950936
+        },
+        {
+            "name":"Painted Ladies",
+            "type":"location",
+            "ref":"paintedladies",
+            "lat": 37.77643933533199, 
+            "lng": -122.43275560237552
         }
 
 

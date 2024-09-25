@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+<span style="opacity:0.5;">{{ .PublishDate.Format "Jan. 2, 2006" }}</span>
+<br/>
+
+{{.Content }}
+
+<span style="opacity:0.7;">/Sebastian</span>
+
+{{ template "_internal/disqus.html" . }}
+
+{{ end }}

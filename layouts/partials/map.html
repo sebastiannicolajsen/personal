@@ -1,3 +1,6 @@
+
+
+
 <div style="background-color: black; width: 100%; height: 300px;opacity:0.5" id="map"></div>
 <div style="text-align: center; opacity:1">
 
@@ -75,7 +78,7 @@ a[href^="https://www.google.com/maps"]
     v: "weekly",
   });
 
-  let map;
+  var map;
   // initMap is now async
   async function initMap() {
     // Request libraries when needed, not in the script tag.
@@ -88,6 +91,8 @@ a[href^="https://www.google.com/maps"]
       center: { lat: 30.773972, lng: -118.431297 },
       mapId: "{{ .Context.Site.Params.google_maps_map_id }}",
       zoom: 4,
+      sensor: false,
+      v: 3.14,
       disableDefaultUI: true,
       zoomControl: true,
       mapTypeControl: true,
@@ -141,8 +146,14 @@ a[href^="https://www.google.com/maps"]
     ("{{range .Context.Site.Data.places.places}}");
     marker("{{.lat}}", "{{.lng}}", "{{.name}}", "{{.ref}}", "{{.type}}", map);
     ("{{end}}");
+   
   }
 
+
+  
+
   initMap();
+  
+  
 </script>
 
